@@ -1,7 +1,3 @@
-emailjs.init({
-  publicKey: "GJeQ1zZNkyIlLeOpN"
-});
-
 (function () {
   "use strict";
   var RESUME_PATH = "Resume.pdf";
@@ -202,22 +198,6 @@ emailjs.init({
         firstInvalid.focus();
         return;
       }
-
-      status.textContent = "Sending...";
-
-      emailjs.sendForm(
-        "service_jp16spf",
-        "template_akwy12j",
-        form
-      )
-      .then(function () {
-        status.textContent = "Thanks! Your message has been sent.";
-        form.reset();
-      })
-      .catch(function (error) {
-        console.error("EmailJS error:", error);
-        status.textContent = "Oops! Something went wrong. Please try again later.";
-      });
     });
   }
 
