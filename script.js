@@ -1,6 +1,5 @@
 (function () {
   "use strict";
-
   var RESUME_PATH = "Resume.pdf";
   var RESUME_FILENAME = "Resume.pdf";
 
@@ -12,7 +11,7 @@
   var $$ = function (sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); };
 
   function initEmailJS() {
-    if (window.emailjs && EMAILJS_PUBLIC_KEY !== "Hn4EKn8s-DfzTy_8G") {
+    if (window.emailjs) {
       window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
     }
   }
@@ -211,8 +210,8 @@
         return;
       }
 
-      if (!window.emailjs || EMAILJS_PUBLIC_KEY === "Hn4EKn8s-DfzTy_8G") {
-        status.textContent = "Email isn't configured yet — add your EmailJS keys in script.js (see README).";
+      if (!window.emailjs) {
+        status.textContent = "Email isn't configured yet — check that the EmailJS script tag is in index.html.";
         status.classList.add("form__status--error");
         return;
       }
@@ -231,7 +230,8 @@
         status.textContent = "Thanks! Your message has been sent — I'll get back to you soon.";
         form.reset();
       }).catch(function (err) {
-        status.textContent = "Something went wrong sending that. Please try again or email me directly.";
+        var detail = (err && (err.text || err.message)) ? " (" + (err.text || err.message) + ")" : "";
+        status.textContent = "Something went wrong sending that" + detail + ". Please try again or email me directly.";
         status.classList.add("form__status--error");
         console.error("EmailJS error:", err);
       }).finally(function () {
