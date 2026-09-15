@@ -4,7 +4,7 @@
   var RESUME_PATH = "Resume.pdf";
   var RESUME_FILENAME = "Resume.pdf";
 
-  var EMAILJS_PUBLIC_KEY = "GJeQ1zZNkyIlLeOpN";
+  var EMAILJS_PUBLIC_KEY = "Hn4EKn8s-DfzTy_8G";
   var EMAILJS_SERVICE_ID = "service_jp16spf";
   var EMAILJS_TEMPLATE_ID = "template_akwy12j";
 
@@ -12,7 +12,7 @@
   var $$ = function (sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); };
 
   function initEmailJS() {
-    if (window.emailjs && EMAILJS_PUBLIC_KEY !== "GJeQ1zZNkyIlLeOpN") {
+    if (window.emailjs && EMAILJS_PUBLIC_KEY !== "Hn4EKn8s-DfzTy_8G") {
       window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
     }
   }
@@ -211,7 +211,7 @@
         return;
       }
 
-      if (!window.emailjs || EMAILJS_PUBLIC_KEY === "YGJeQ1zZNkyIlLeOpN") {
+      if (!window.emailjs || EMAILJS_PUBLIC_KEY === "Hn4EKn8s-DfzTy_8G") {
         status.textContent = "Email isn't configured yet — add your EmailJS keys in script.js (see README).";
         status.classList.add("form__status--error");
         return;
