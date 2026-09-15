@@ -1,7 +1,11 @@
+emailjs.init({
+  publicKey: "GJeQ1zZNkyIlLeOpN"
+});
+
 (function () {
   "use strict";
-  var RESUME_PATH = "YourName_Resume.pdf";
-  var RESUME_FILENAME = "YourName_Resume.pdf";
+  var RESUME_PATH = "Resume.pdf";
+  var RESUME_FILENAME = "Resume.pdf";
 
   var $ = function (sel, ctx) { return (ctx || document).querySelector(sel); };
   var $$ = function (sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); };
@@ -199,8 +203,21 @@
         return;
       }
 
-      status.textContent = "Thanks! Your message form is ready to be connected to an email service.";
-      form.reset();
+      status.textContent = "Sending...";
+
+      emailjs.sendForm(
+        "service_jp16spf",
+        "template_akwy12j",
+        form
+      )
+      .then(function () {
+        status.textContent = "Thanks! Your message has been sent.";
+        form.reset();
+      })
+      .catch(function (error) {
+        console.error("EmailJS error:", error);
+        status.textContent = "Oops! Something went wrong. Please try again later.";
+      });
     });
   }
 
