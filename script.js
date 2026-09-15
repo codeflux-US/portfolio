@@ -223,8 +223,8 @@
       submitBtn.textContent = "Sending...";
 
       window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-        from_name: document.getElementById("name").value.trim(),
-        reply_to: document.getElementById("email").value.trim(),
+        name: document.getElementById("name").value.trim(),
+        email: document.getElementById("email").value.trim(),
         subject: document.getElementById("subject").value.trim(),
         message: document.getElementById("message").value.trim()
       }).then(function () {
