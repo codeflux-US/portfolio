@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utkarsh Sahu | Software Engineer | DevOps | Data Analytics</title>
+  <meta name="description" content="Portfolio of Utkarsh Sahu, a B.Sc. IT student and fresher building projects in software engineering, DevOps and data analytics.">
+  <meta name="keywords" content="B.Sc. IT student portfolio, fresher software engineer, DevOps enthusiast, data analyst fresher, HTML CSS JavaScript, Python, SQL, Mumbai">
+  <meta name="author" content="Utkarsh Sahu">
+  <meta name="theme-color" content="#0D141A">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Utkarsh Sahu | Software Engineer | DevOps | Data Analytics">
+  <meta property="og:description" content="B.Sc. IT student and fresher building practical projects across software development, cloud and automation, and data analysis.">
+  <meta property="og:url" content="https://yourusername.github.io/portfolio/">
+  <meta property="og:image" content="photo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Home">
+        <span class="logo__mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="logo__text">Utkarsh Sahu</span>
+      </a>
+
+      <ul class="nav__list" id="navList">
+        <li><a class="nav__link" href="#home">Home</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#resume">Resume</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+
+        <button class="icon-btn nav__burger" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navList">
+          <span class="burger" aria-hidden="true"><i></i><i></i><i></i></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="hero__greeting">Hi, I'm <strong>Utkarsh Sahu</strong></p>
+          <h1 class="hero__title">
+            Software Engineer<span class="hero__bar" aria-hidden="true"></span>DevOps Enthusiast<span class="hero__bar" aria-hidden="true"></span>Data Analyst
+          </h1>
+          <p class="hero__lead">
+            B.Sc. IT student passionate about software development, cloud infrastructure,
+            automation and data-driven problem solving.
+          </p>
+          <p class="hero__note">
+            Building practical projects, strengthening technical skills and preparing for
+            opportunities in software engineering, DevOps and data analytics.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View my projects</a>
+            <a class="btn btn--ghost" href="YourName_Resume.pdf" download="YourName_Resume.pdf">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 19h16"/></svg>
+              Download resume
+            </a>
+            <a class="link-quiet" href="#contact">Let's connect</a>
+          </div>
+        </div>
+
+        <aside class="hero__card" aria-label="Profile">
+          <div class="avatar">
+            <img src="photo.png" alt="Profile photo placeholder for Utkarsh Sahu" width="180" height="180">
+          </div>
+          <p class="hero__card-name">Utkarsh Sahu</p>
+          <p class="hero__card-role">B.Sc. IT Student &middot; Fresher</p>
+          <ul class="track-list">
+            <li class="track track--eng"><span aria-hidden="true"></span>Software engineering</li>
+            <li class="track track--ops"><span aria-hidden="true"></span>DevOps &amp; cloud</li>
+            <li class="track track--data"><span aria-hidden="true"></span>Data analytics</li>
+          </ul>
+          <p class="hero__card-loc">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Mumbai, Maharashtra, India
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title" data-reveal>About me</h2>
+
+        <div class="about">
+          <div class="about__text" data-reveal>
+            <p>
+              I'm a B.Sc. Information Technology student and a fresher, which means everything
+              on this site comes from coursework, self-study and projects I built on my own time
+              rather than from a job.
+            </p>
+            <p>
+              I like the whole path a piece of software takes: writing it, shipping it, and then
+              reading what the data says about it. That is why I'm working towards three connected
+              areas — software engineering, DevOps and data analytics — instead of picking one and
+              ignoring the rest.
+            </p>
+            <p>
+              Most of my learning is hands-on. I pick a small problem, build a working version of
+              it with HTML, CSS, JavaScript, Python or SQL, break it, and fix it. Automation and
+              problem solving are the parts I enjoy most, and I'm steadily adding Linux, Git and
+              cloud fundamentals to that base.
+            </p>
+            <p>
+              I'm looking for an internship or entry-level role where I can contribute to real work
+              and keep learning from people who've done it longer than I have.
+            </p>
+          </div>
+
+          <ul class="stats" data-reveal>
+            <li class="stat"><span class="stat__num">3</span><span class="stat__label">Career interests</span></li>
+            <li class="stat"><span class="stat__num">8+</span><span class="stat__label">Technical skills</span></li>
+            <li class="stat"><span class="stat__num">12</span><span class="stat__label">Practice projects</span></li>
+            <li class="stat"><span class="stat__num">∞</span><span class="stat__label">Continuous learning</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="focus">
+      <div class="container">
+        <h2 class="section__title" data-reveal>My career focus</h2>
+        <p class="section__lead" data-reveal>Three directions I'm building towards, and the ground I've covered in each so far.</p>
+
+        <div class="focus-grid">
+          <article class="focus-card focus-card--eng" data-reveal>
+            <span class="focus-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+            </span>
+            <h3>Software engineering</h3>
+            <p>Interested in building reliable, scalable and user-focused software applications using programming fundamentals, web technologies and databases.</p>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>C</li><li>C++</li><li>SQL</li>
+            </ul>
+          </article>
+
+          <article class="focus-card focus-card--ops" data-reveal>
+            <span class="focus-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg>
+            </span>
+            <h3>DevOps engineering</h3>
+            <p>Interested in automation, cloud infrastructure, deployment workflows, system reliability and modern development practices.</p>
+            <p class="focus-card__note">Learning areas, not claimed expertise:</p>
+            <ul class="chips">
+              <li>Cloud computing</li><li>Linux</li><li>Networking</li><li>CI/CD</li><li>Automation</li><li>Containers</li>
+            </ul>
+          </article>
+
+          <article class="focus-card focus-card--data" data-reveal>
+            <span class="focus-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+            </span>
+            <h3>Data analytics</h3>
+            <p>Interested in transforming raw data into meaningful insights using SQL, Excel, Python and analytical thinking.</p>
+            <ul class="chips">
+              <li>SQL</li><li>Python</li><li>MS Excel</li><li>Data analysis</li><li>Data visualization</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title" data-reveal>Technical skills</h2>
+        <p class="section__lead" data-reveal>
+          Honest labels instead of percentages. <em>Familiar</em> means I've built with it,
+          <em>practicing</em> means I use it regularly but I'm still sharpening it, and
+          <em>learning</em> means I'm working through the fundamentals now.
+        </p>
+
+        <div class="skills-grid">
+          <section class="skill-group" data-reveal>
+            <h3 class="skill-group__title">Programming languages</h3>
+            <ul class="skill-list">
+              <li class="skill"><span class="skill__name">C</span><span class="tag tag--practicing">Practicing</span></li>
+              <li class="skill"><span class="skill__name">C++</span><span class="tag tag--practicing">Practicing</span></li>
+              <li class="skill"><span class="skill__name">Python</span><span class="tag tag--familiar">Familiar</span></li>
+              <li class="skill"><span class="skill__name">JavaScript</span><span class="tag tag--familiar">Familiar</span></li>
+            </ul>
+          </section>
+
+          <section class="skill-group" data-reveal>
+            <h3 class="skill-group__title">Web technologies</h3>
+            <ul class="skill-list">
+              <li class="skill"><span class="skill__name">HTML5</span><span class="tag tag--familiar">Familiar</span></li>
+              <li class="skill"><span class="skill__name">CSS3</span><span class="tag tag--familiar">Familiar</span></li>
+              <li class="skill"><span class="skill__name">JavaScript (DOM)</span><span class="tag tag--practicing">Practicing</span></li>
+            </ul>
+          </section>
+
+          <section class="skill-group" data-reveal>
+            <h3 class="skill-group__title">Database</h3>
+            <ul class="skill-list">
+              <li class="skill"><span class="skill__name">SQL</span><span class="tag tag--practicing">Practicing</span></li>
+            </ul>
+          </section>
+
+          <section class="skill-group" data-reveal>
+            <h3 class="skill-group__title">Data &amp; productivity</h3>
+            <ul class="skill-list">
+              <li class="skill"><span class="skill__name">MS Excel</span><span class="tag tag--familiar">Familiar</span></li>
+            </ul>
+          </section>
+        </div>
+
+        <h3 class="subheading" data-reveal>Core areas</h3>
+        <ul class="core-grid" data-reveal>
+          <li class="core-card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 3h5l1 3 3 1v5l-3 1-1 3h-5l-1-3-3-1V7l3-1Z"/><circle cx="12" cy="9.5" r="2"/></svg>
+            Problem solving
+          </li>
+          <li class="core-card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
+            Programming fundamentals
+          </li>
+          <li class="core-card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+            Database fundamentals
+          </li>
+          <li class="core-card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>
+            Web development
+          </li>
+          <li class="core-card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h16M8 15l3.5-4.5 3 3L20 7"/></svg>
+            Data analysis
+          </li>
+          <li class="core-card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6 7.8 7.8M16.2 16.2l2.2 2.2M5.6 18.4l2.2-2.2M16.2 7.8l2.2-2.2"/></svg>
+            DevOps fundamentals
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <h2 class="section__title" data-reveal>Projects</h2>
+        <p class="section__lead" data-reveal>
+          Personal and academic projects built for practice and portfolio demonstration —
+          not client or company work.
+        </p>
+
+        <div class="filters" role="group" aria-label="Filter projects by category" data-reveal>
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="software" aria-pressed="false">Software engineering</button>
+          <button class="filter" type="button" data-filter="devops" aria-pressed="false">DevOps</button>
+          <button class="filter" type="button" data-filter="data" aria-pressed="false">Data analytics</button>
+        </div>
+
+        <div class="projects" id="projectGrid">
+          <article class="project project--eng" data-category="software" data-reveal>
+            <header class="project__head">
+              <span class="project__cat">Software engineering</span>
+              <h3 class="project__title">Smart Task Management System</h3>
+            </header>
+            <p class="project__desc">A responsive task management web application for organizing tasks, priorities and deadlines.</p>
+            <ul class="project__features">
+              <li>Add, edit and delete tasks</li>
+              <li>Task status and priority levels</li>
+              <li>Local storage persistence</li>
+              <li>Responsive interface</li>
+            </ul>
+            <ul class="chips chips--sm"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <footer class="project__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/yourusername/smart-task-management" target="_blank" rel="noopener">View project</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/yourusername/smart-task-management" target="_blank" rel="noopener">GitHub</a>
+            </footer>
+          </article>
+
+          <article class="project project--eng" data-category="software" data-reveal>
+            <header class="project__head">
+              <span class="project__cat">Software engineering</span>
+              <h3 class="project__title">Student Presentation Registration System</h3>
+            </header>
+            <p class="project__desc">A web-based registration system designed to collect student presentation group details and organize submissions.</p>
+            <ul class="project__features">
+              <li>Section selection and solo or group registration</li>
+              <li>Dynamic member fields</li>
+              <li>Form validation and registration summary</li>
+              <li>Responsive UI</li>
+            </ul>
+            <ul class="chips chips--sm"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <footer class="project__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/yourusername/presentation-registration" target="_blank" rel="noopener">View project</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/yourusername/presentation-registration" target="_blank" rel="noopener">GitHub</a>
+            </footer>
+          </article>
+
+          <article class="project project--eng" data-category="software" data-reveal>
+            <header class="project__head">
+              <span class="project__cat">Software engineering</span>
+              <h3 class="project__title">Personal Expense Tracker</h3>
+            </header>
+            <p class="project__desc">A browser-based expense tracking application for managing income, expenses and spending categories.</p>
+            <ul class="project__features">
+              <li>Add income and expense transactions</li>
+              <li>Categories and running balance</li>
+              <li>Transaction history in local storage</li>
+              <li>Basic visual summary</li>
+            </ul>
+            <ul class="chips chips--sm"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <footer class="project__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/yourusername/expense-tracker" target="_blank" rel="noopener">View project</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/yourusername/expense-tracker" target="_blank" rel="noopener">GitHub</a>
+            </footer>
+          </article>
+
+          <article class="project project--eng" data-category="software" data-reveal>
+            <header class="project__head">
+              <span class="project__cat">Software engineering</span>
+              <h3 class="project__title">Developer Portfolio Website</h3>
+            </header>
+            <p class="project__desc">A responsive personal portfolio website showcasing technical skills, projects, resume and contact information.</p>
+            <ul class="project__features">
+              <li>Responsive design and mobile navigation</li>
+              <li>Filterable project showcase</li>
+              <li>Resume and contact sections</li>
+              <li>Smooth scroll animations</li>
+            </ul>
+            <ul class="chips chips--sm"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <footer class="project__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/yourusername/portfolio" target="_blank" rel="noopener">View project</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/yourusername/portfolio" target="_blank" rel="noopener">GitHub</a>
+            </footer>
+          </article>
+
+          <article class="project project--ops" data-category="devops" data-reveal>
+            <header class="project__head">
+              <span class="project__cat">DevOps &middot; learning project</span>
+              <h3 class="project__title">CI/CD Pipeline Simulation</h3>
+            </header>
+            <p class="project__desc">A learning project demonstrating the conceptual workflow of automated build, testing and deployment.</p>
+            <ul class="project__features">
+              <li>Build, test and deploy stages mapped out</li>
+              <li>Branching and version control practice</li>
+              <li>Written walkthrough of each stage</li>
+            </ul>
+            <ul class="chips chips--sm"><li>Git</li><li>GitHub</li><li>CI/CD concepts</li></ul>
+            <footer class="project__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/yourusername/cicd-pipeline-simulation" target="_blank" rel="noopener">View project</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/yourusername/cicd-pipeline-simulation" target="_blank" rel="noopener">GitHub</a>
+            </footer>
+          </article>
+
+          <article class="project project--ops" data-category="devops" data-reveal>
+            <header class="project__head">
+              <span class="project__cat">DevOps &middot; learning project</span>
+              <h3 class="project__title">Static Website Deployment Workflow</h3>
+            </header>
+            <p class="project__desc">A project documenting a deployment workflow for hosting a static website with version-controlled source code.</p>
+            <ul class="project__features">
+              <li>Repository setup and commit conventions</li>
+              <li>Build and publish steps</li>
+              <li>Rollback notes and checks before release</li>
+            </ul>
+            <ul class="chips chips--sm"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li><li>GitHub</li></ul>
+            <footer class="project__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/yourusername/static-site-deployment" target="_blank" rel="noopener">View project</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/yourusername/static-site-deployment" target="_blank" rel="noopener">GitHub</a>
+            </footer>
+          </article>
+
+          <article class="project project--ops" data-category="devops" data-reveal>
+            <header class="project__head">
+              <span class="project__cat">DevOps &middot; dashboard concept</span>
+              <h3 class="project__title">Server Monitoring Dashboard Concept</h3>
+            </header>
+            <p class="project__desc">A frontend dashboard concept designed to visualize server health metrics such as CPU usage, memory usage, uptime and service status.</p>
+            <ul class="project__features">
+              <li>Monitoring cards and status indicators</li>
+              <li>Metric visualization with mock data</li>
+              <li>Responsive dashboard layout</li>
+            </ul>
+            <ul class="chips chips--sm"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <footer class="project__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/yourusername/monitoring-dashboard-concept" target="_blank" rel="noopener">View project</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/yourusername/monitoring-dashboard-concept" target="_blank" rel="noopener">GitHub</a>
+            </footer>
+          </article>
+
+          <article class="project project--ops" data-category="devops" data-reveal>
+            <header class="project__head">
+              <span class="project__cat">DevOps &middot; learning project</span>
+              <h3 class="project__title">DevOps Infrastructure Documentation</h3>
+            </header>
+            <p class="project__desc">A learning project documenting a basic development-to-deployment workflow covering source control, testing, deployment and monitoring.</p>
+            <ul class="project__features">
+              <li>End-to-end workflow diagram</li>
+              <li>Environment and access notes</li>
+              <li>Monitoring and incident checklist</li>
+            </ul>
+            <ul class="chips chips--sm"><li>Git</li><li>CI/CD concepts</li><li>Linux fundamentals</li><li>Cloud fundamentals</li></ul>
+            <footer class="project__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/yourusername/devops-infra-docs" target="_blank" rel="noopener">View project</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/yourusername/devops-infra-docs" target="_blank" rel="noopener">GitHub</a>
+            </footer>
+          </article>
+
+          <article class="project project--data" data-category="data" data-reveal>
+            <header class="project__head">
+              <span class="project__cat">Data analytics</span>
+              <h3 class="project__title">Student Performance Analysis</h3>
+            </header>
+            <p class="project__desc">Analyze student performance data to identify trends in marks, attendance and subject-wise performance.</p>
+            <ul class="project__features">
+              <li>Data cleaning and preparation</li>
+              <li>Summary metrics by subject</li>
+              <li>Charts and written insights</li>
+            </ul>
+            <ul class="chips chips--sm"><li>Python</li><li>SQL</li><li>MS Excel</li></ul>
+            <footer class="project__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/yourusername/student-performance-analysis" target="_blank" rel="noopener">View project</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/yourusername/student-performance-analysis" target="_blank" rel="noopener">GitHub</a>
+            </footer>
+          </article>
+
+          <article class="project project--data" data-category="data" data-reveal>
+            <header class="project__head">
+              <span class="project__cat">Data analytics</span>
+              <h3 class="project__title">Sales Data Analysis Dashboard</h3>
+            </header>
+            <p class="project__desc">A data analysis project focused on identifying sales trends, top-performing products, revenue patterns and monthly performance.</p>
+            <ul class="project__features">
+              <li>Monthly revenue trends</li>
+              <li>Top product and category breakdown</li>
+              <li>Pivot summaries and charts</li>
+            </ul>
+            <ul class="chips chips--sm"><li>MS Excel</li><li>SQL</li><li>Python</li></ul>
+            <footer class="project__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/yourusername/sales-data-analysis" target="_blank" rel="noopener">View project</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/yourusername/sales-data-analysis" target="_blank" rel="noopener">GitHub</a>
+            </footer>
+          </article>
+
+          <article class="project project--data" data-category="data" data-reveal>
+            <header class="project__head">
+              <span class="project__cat">Data analytics</span>
+              <h3 class="project__title">Customer Purchase Analysis</h3>
+            </header>
+            <p class="project__desc">Analyze customer purchase data to identify buying patterns, customer segments and frequently purchased products.</p>
+            <ul class="project__features">
+              <li>Purchase frequency and basket patterns</li>
+              <li>Simple customer segmentation</li>
+              <li>Visual summary of findings</li>
+            </ul>
+            <ul class="chips chips--sm"><li>Python</li><li>SQL</li><li>Excel</li></ul>
+            <footer class="project__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/yourusername/customer-purchase-analysis" target="_blank" rel="noopener">View project</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/yourusername/customer-purchase-analysis" target="_blank" rel="noopener">GitHub</a>
+            </footer>
+          </article>
+
+          <article class="project project--data" data-category="data" data-reveal>
+            <header class="project__head">
+              <span class="project__cat">Data analytics</span>
+              <h3 class="project__title">Employee Data Analytics</h3>
+            </header>
+            <p class="project__desc">Analyze employee-related data to understand department distribution, salary patterns, experience and workforce trends.</p>
+            <ul class="project__features">
+              <li>Department and role distribution</li>
+              <li>Experience versus pay-band patterns</li>
+              <li>Charts with interpretation notes</li>
+            </ul>
+            <ul class="chips chips--sm"><li>Python</li><li>SQL</li><li>MS Excel</li></ul>
+            <footer class="project__links">
+              <a class="btn btn--sm btn--primary" href="https://github.com/yourusername/employee-data-analytics" target="_blank" rel="noopener">View project</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/yourusername/employee-data-analytics" target="_blank" rel="noopener">GitHub</a>
+            </footer>
+          </article>
+        </div>
+
+        <p class="projects__empty" id="projectsEmpty" hidden>No projects in this category yet.</p>
+      </div>
+    </section>
+
+    <section class="section" id="resume">
+      <div class="container">
+        <h2 class="section__title" data-reveal>Resume</h2>
+        <p class="section__lead" data-reveal>Download my resume to learn more about my education, technical skills, projects and career interests.</p>
+
+        <div class="resume" data-reveal>
+          <div class="resume__actions">
+            <button class="btn btn--primary" type="button" id="viewResume">Open resume in new tab</button>
+            <button class="btn btn--ghost" type="button" id="downloadResume">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 19h16"/></svg>
+              Download PDF
+            </button>
+          </div>
+          <div class="resume__preview">
+            <iframe src="YourName_Resume.pdf" title="Resume preview for Utkarsh Sahu" loading="lazy"></iframe>
+            <p class="resume__fallback">
+              If the preview doesn't load in your browser,
+              <a href="YourName_Resume.pdf" target="_blank" rel="noopener">open the PDF directly</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <h2 class="section__title" data-reveal>Education</h2>
+            <ol class="timeline" data-reveal>
+              <li class="timeline__item">
+                <span class="timeline__status">Currently pursuing</span>
+                <h3>Bachelor of Science in Information Technology (B.Sc. IT)</h3>
+                <p class="timeline__org">Abhinav College of Arts, Commerce and Science, affiliated with University of Mumbai</p>
+                <p class="timeline__meta">Mumbai, Maharashtra &middot; 2025 – Present(2026)</p>
+                <p class="timeline__meta">Expected graduation: 2028</p>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h2 class="section__title" data-reveal>Languages</h2>
+            <ul class="lang-grid" data-reveal>
+              <li class="lang-card">
+                <h3>Hindi</h3>
+                <p>Native</p>
+              </li>
+              <li class="lang-card">
+                <h3>English</h3>
+                <p>Fluent</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section__title" data-reveal>Let's connect</h2>
+        <p class="section__lead" data-reveal>
+          I'm currently looking for opportunities to learn, contribute and grow in software
+          engineering, DevOps and data analytics.
+        </p>
+
+        <div class="contact">
+          <ul class="contact__info" data-reveal>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span><span class="contact__label">Email</span><a href="mailto:utkarsh6349@gmail.com">utkarsh6349@gmail.com</a></span>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.1 1A16 16 0 0 1 4 5.1 1 1 0 0 1 5 4Z"/></svg>
+              <span><span class="contact__label">Phone</span><a href="tel:+919305365513">+91 93053 65513</a></span>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span><span class="contact__label">Location</span>Mumbai, Maharashtra, India</span>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2.2-6-2.7m12 5v-3.4c0-1 .1-1.4-.5-2 2.6-.3 5.3-1.3 5.3-5.8a4.5 4.5 0 0 0-1.2-3.1 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6.2 0C6.5 3.5 5.5 3.8 5.5 3.8a4.2 4.2 0 0 0-.1 3.2 4.5 4.5 0 0 0-1.2 3.1c0 4.5 2.7 5.5 5.3 5.8-.4.4-.5.9-.5 1.5V21"/></svg>
+              <span><span class="contact__label">GitHub</span><a href="https://www.github.com/codeflux-US" target="_blank" rel="noopener">github.com/codeflux-US</a></span>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4"/></svg>
+              <span><span class="contact__label">LinkedIn</span><a href="https://www.linkedin.com/in/utkarsh-sahu4" target="_blank" rel="noopener">linkedin.com/in/utkarsh-sahu4</a></span>
+            </li>
+          </ul>
+
+          <form class="form" id="contactForm" novalidate data-reveal>
+            <p class="form__note">This site is frontend-only, so the form doesn't send mail yet. Connect it to an email service such as Formspree, EmailJS or a small backend to make it live.</p>
+
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <p class="field__error" id="nameError" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <p class="field__error" id="emailError" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+              <p class="field__error" id="subjectError" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <p class="field__error" id="messageError" role="alert"></p>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">Send message</button>
+            <p class="form__status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__name">© <span id="year">2026</span> Utkarsh Sahu. Built with HTML, CSS &amp; JavaScript.</p>
+        <p class="footer__tag">Software Engineer &bull; DevOps Enthusiast &bull; Data Analyst</p>
+      </div>
+      <ul class="footer__links">
+        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:your.email@example.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5m0 0-6 6m6-6 6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
