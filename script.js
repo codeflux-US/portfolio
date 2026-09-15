@@ -216,28 +216,7 @@ emailjs.init({
       })
       .catch(function (error) {
         console.error("EmailJS error:", error);
-        fetch("https://formspree.io/f/xppzvgkp",
-              {
-                method: "POST",
-                body:new FormData(form),
-                headers: {
-                  "Accept": "application/json"
-                }
-              })
-        .then(function (response) {
-          if (response.ok) {
-            status.textContent = "Thanks! Your message has been sent.";
-            form.reset();
-          } else {
-            throw new 
-              Error("Formspree submission failed");
-          }
-        })
-        .catch(function (formspreeError)
-               {
-                 console.error("Formspree Failed:", formspreeError);
-                 status.textContent = "Oops! Something went weong. Please try again later.";
-            });
+        status.textContent = "Oops! Something went wrong. Please try again later.";
       });
     });
   }
