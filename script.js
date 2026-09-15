@@ -1,18 +1,19 @@
 (function () {
   "use strict";
+
   var RESUME_PATH = "Resume.pdf";
   var RESUME_FILENAME = "Resume.pdf";
 
-  var EMAILJS_PUBLIC_KEY = "GJeQ1zZNkyIlLeOpN"; 
-  var EMAILJS_SERVICE_ID = "service_jp16spf"; 
-  var EMAILJS_TEMPLATE_ID = "template_akwy12j"; 
+  var EMAILJS_PUBLIC_KEY = "GJeQ1zZNkyIlLeOpN";
+  var EMAILJS_SERVICE_ID = "service_jp16spf";
+  var EMAILJS_TEMPLATE_ID = "template_akwy12j";
 
   var $ = function (sel, ctx) { return (ctx || document).querySelector(sel); };
   var $$ = function (sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); };
 
-   function initEmailJS() {
+  function initEmailJS() {
     if (window.emailjs && EMAILJS_PUBLIC_KEY !== "GJeQ1zZNkyIlLeOpN") {
-      window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY});
+      window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
     }
   }
 
@@ -196,6 +197,7 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       status.textContent = "";
+      status.classList.remove("form__status--error");
 
       var firstInvalid = null;
       rules.forEach(function (rule) {
@@ -208,6 +210,34 @@
         firstInvalid.focus();
         return;
       }
+
+      if (!window.emailjs || EMAILJS_PUBLIC_KEY === "YGJeQ1zZNkyIlLeOpN") {
+        status.textContent = "Email isn't configured yet — add your EmailJS keys in script.js (see README).";
+        status.classList.add("form__status--error");
+        return;
+      }
+
+      var submitBtn = form.querySelector("button[type=submit]");
+      var originalLabel = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+
+      window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+        from_name: document.getElementById("name").value.trim(),
+        reply_to: document.getElementById("email").value.trim(),
+        subject: document.getElementById("subject").value.trim(),
+        message: document.getElementById("message").value.trim()
+      }).then(function () {
+        status.textContent = "Thanks! Your message has been sent — I'll get back to you soon.";
+        form.reset();
+      }).catch(function (err) {
+        status.textContent = "Something went wrong sending that. Please try again or email me directly.";
+        status.classList.add("form__status--error");
+        console.error("EmailJS error:", err);
+      }).finally(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalLabel;
+      });
     });
   }
 
