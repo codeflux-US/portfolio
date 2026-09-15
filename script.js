@@ -3,8 +3,18 @@
   var RESUME_PATH = "Resume.pdf";
   var RESUME_FILENAME = "Resume.pdf";
 
+  var EMAILJS_PUBLIC_KEY = "GJeQ1zZNkyIlLeOpN"; 
+  var EMAILJS_SERVICE_ID = "service_jp16spf"; 
+  var EMAILJS_TEMPLATE_ID = "template_akwy12j"; 
+
   var $ = function (sel, ctx) { return (ctx || document).querySelector(sel); };
   var $$ = function (sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); };
+
+   function initEmailJS() {
+    if (window.emailjs && EMAILJS_PUBLIC_KEY !== "GJeQ1zZNkyIlLeOpN") {
+      window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY});
+    }
+  }
 
   function initTheme() {
     var root = document.documentElement;
@@ -219,6 +229,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    initEmailJS();
     initTheme();
     initNav();
     initScrollSpy();
