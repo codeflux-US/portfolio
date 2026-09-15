@@ -211,7 +211,7 @@
         return;
       }
 
-      if (!window.emailjs || EMAILJS_PUBLIC_KEY === "Hn4EKn8s-DfzTy_8G") {
+      if (!window.emailjs || !EMAILJS_PUBLIC_KEY) {
         status.textContent = "Email isn't configured yet — add your EmailJS keys in script.js (see README).";
         status.classList.add("form__status--error");
         return;
